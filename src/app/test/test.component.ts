@@ -41,4 +41,7 @@ export class TestComponent {
   logMessage(value: any) {
     console.log(value);
   }
+
+  twowayBinding = "";
+
 }
