@@ -49,4 +49,6 @@ export class TestComponent {
   displayNameWithElse = false;
 
   displayName2 = false;
+
+  color = "blue";
 }

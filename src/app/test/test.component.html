@@ -52,3 +52,11 @@
 <ng-template #elseBlock2>
     <h2>ngIf directive with ngtemplate elseBlock</h2>
 </ng-template>
+
+<h2>Switch Directive</h2>
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">Picked RED</div>
+    <div *ngSwitchCase="'blue'">Picked BLUE</div>
+    <div *ngSwitchCase="'green'">Picked GREEN</div>
+    <div *ngSwitchDefault>Pick again</div>
+</div>
