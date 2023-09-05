@@ -10,3 +10,8 @@
 <h2>Property Binding</h2>
 <input type="text" [id]="myId" value="Kohli" >
 <input type="text" [disabled]="isDisabled" value="Kohli" >
+
+<h2 class="text-success">Class Binding with normal html class</h2>
+<h2 [class]="successClass">Class Binding with class binding</h2>
+<h2 [class.text-danger]="hasError">Class Binding with single class conditiional boolean</h2>
+<h2 [ngClass]="messageClasses">Class Binding with multiple class conditiional boolean</h2>
