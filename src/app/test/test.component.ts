@@ -53,4 +53,14 @@ export class TestComponent {
   color = "blue";
 
   colors = ["red", "blue", "green", "yellow"]
+
+  lowercase = "lowercase";
+  uppercase = "uppercase";
+  titlecase = "It will change to titlecase";
+  person = {
+    "firstname": "MS",
+    "lastname": "Dhoni"
+  }
+
+  date = new Date();
 }
