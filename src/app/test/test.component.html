@@ -108,3 +108,7 @@
 <p>{{date | date:'longTime'}}</p>
 
 
+<h2>Component Interaction</h2>
+<p><strong>Test Component</strong> - {{dataFromParent}}</p>
+
+<button (click)="fireEvent()">Fire the data from child to parent</button>

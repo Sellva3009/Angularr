@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WebDive';
+  name = 'Data from the App Component';
+  message = "";
 }

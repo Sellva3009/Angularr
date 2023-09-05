@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -50,8 +50,9 @@ export class TestComponent {
 
   displayName2 = false;
 
-  color = "blue";
+  color = 'blue';
 
+<<<<<<< HEAD
   colors = ["red", "blue", "green", "yellow"]
 
   lowercase = "lowercase";
@@ -63,4 +64,15 @@ export class TestComponent {
   }
 
   date = new Date();
+=======
+  colors = ['red', 'blue', 'green', 'yellow'];
+
+  @Input('parentData') dataFromParent: any;
+
+  @Output() public childEvent = new EventEmitter();
+
+  fireEvent(): void {
+    this.childEvent.emit('This is from Child Component');
+  }
+>>>>>>> ea9f6061847da8eb42e227e979d72cc8219b0783
 }
