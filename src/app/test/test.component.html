@@ -28,3 +28,7 @@
 <input type="text" #myInput placeholder="template referral">
 <button (click)="logMessage(myInput.value)">Log value (Template Referral)</button>
 <button (click)="logMessage(myInput)">Log (Template Referral)</button>
+
+<h2>Two way data binding</h2>
+<input type="text" [(ngModel)]="twowayBinding">
+{{twowayBinding}}
