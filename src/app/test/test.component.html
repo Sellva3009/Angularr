@@ -32,3 +32,23 @@
 <h2>Two way data binding</h2>
 <input type="text" [(ngModel)]="twowayBinding">
 {{twowayBinding}}
+
+<h2 *ngIf="true">ngIf directive with direct boolean value</h2>
+<h2 *ngIf="displayName">ngIf directive with assigned variable</h2>
+<h2 *ngIf="displayNameWithElse; else elseBlock">ngIf directive with if statement</h2>
+
+<ng-template #elseBlock>
+    <h2>ngIf directive with elseBlock</h2>
+</ng-template>
+
+<div *ngIf="displayName2; then thenBlock2; else elseBlock2">
+
+</div>
+
+<ng-template #thenBlock2>
+    <h2>ngIf directive with ngtemplate thenBlock</h2>
+</ng-template>
+
+<ng-template #elseBlock2>
+    <h2>ngIf directive with ngtemplate elseBlock</h2>
+</ng-template>
