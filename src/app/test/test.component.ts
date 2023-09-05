@@ -19,6 +19,11 @@ export class TestComponent {
     "text-danger": this.hasError,
     "text-special": this.isSpecial
   }
+  highlightColor = "orange";
+  titleStyles = {
+    "color": "blue",
+    "fontStyle": "italic"
+  }
 
   greetname() {
     return "Hello " + this.name;
