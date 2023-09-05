@@ -86,6 +86,11 @@
     <p>{{e}}: {{ color }}</p>
 </div>
 
+<h2>Component Interaction</h2>
+<p><strong>Test Component</strong> - {{dataFromParent}}</p>
+
+<button (click)="fireEvent()">Fire the data from child to parent</button>
+
 <h2>Pipes</h2>
 <p>{{ lowercase | lowercase }}</p>
 <p>{{ uppercase | uppercase }}</p>
@@ -106,9 +111,3 @@
 <p>{{date | date:'long'}}</p>
 <p>{{date | date:'longTime'}}</p>
 <p>{{date | date:'longTime'}}</p>
-
-
-<h2>Component Interaction</h2>
-<p><strong>Test Component</strong> - {{dataFromParent}}</p>
-
-<button (click)="fireEvent()">Fire the data from child to parent</button>
