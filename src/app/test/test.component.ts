@@ -28,4 +28,13 @@ export class TestComponent {
   greetname() {
     return "Hello " + this.name;
   }
+
+  greeting = "";
+  info = "";
+  onClick(event: any) {
+    console.log('Welcome to WebDive');
+    console.log(event);
+    this.greeting = "This is WebDive"
+    this.info = event.type;
+  }
 }
