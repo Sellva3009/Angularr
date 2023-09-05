@@ -15,3 +15,8 @@
 <h2 [class]="successClass">Class Binding with class binding</h2>
 <h2 [class.text-danger]="hasError">Class Binding with single class conditiional boolean</h2>
 <h2 [ngClass]="messageClasses">Class Binding with multiple class conditiional boolean</h2>
+
+<h2 [style.color]="'orange'">Style Binding</h2>
+<h2 [style.color]="hasError ? 'red' : 'green'">Style Binding with condition</h2>
+<h2 [style.color]="highlightColor">Style Binding with assigned variable</h2>
+<h2 [ngStyle]="titleStyles">Style Binding with multiple styles</h2>
