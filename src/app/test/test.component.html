@@ -85,3 +85,8 @@
 <div *ngFor="let color of colors; even as e">
     <p>{{e}}: {{ color }}</p>
 </div>
+
+<h2>Component Interaction</h2>
+<p><strong>Test Component</strong> - {{dataFromParent}}</p>
+
+<button (click)="fireEvent()">Fire the data from child to parent</button>

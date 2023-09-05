@@ -451,7 +451,8 @@
       </svg>
     </a>
   </div>
-  <app-test></app-test>
+  <app-test [parentData]="name" (childEvent)="message=$event"></app-test>
+  <p>{{message}}</p>
   <!-- Footer -->
   <footer>
       Love Angular?&nbsp;
