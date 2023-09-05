@@ -37,4 +37,8 @@ export class TestComponent {
     this.greeting = "This is WebDive"
     this.info = event.type;
   }
+
+  logMessage(value: any) {
+    console.log(value);
+  }
 }

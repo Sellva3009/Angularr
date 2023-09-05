@@ -24,3 +24,7 @@
 <button (click)="onClick($event)">Event Binding</button>
 <button (click)="greeting = 'Welcome WebDiver'">Event Binding with assigned value from the event</button>
 {{greeting}} {{info}}
+<br>
+<input type="text" #myInput placeholder="template referral">
+<button (click)="logMessage(myInput.value)">Log value (Template Referral)</button>
+<button (click)="logMessage(myInput)">Log (Template Referral)</button>
