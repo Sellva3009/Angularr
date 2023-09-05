@@ -20,3 +20,7 @@
 <h2 [style.color]="hasError ? 'red' : 'green'">Style Binding with condition</h2>
 <h2 [style.color]="highlightColor">Style Binding with assigned variable</h2>
 <h2 [ngStyle]="titleStyles">Style Binding with multiple styles</h2>
+
+<button (click)="onClick($event)">Event Binding</button>
+<button (click)="greeting = 'Welcome WebDiver'">Event Binding with assigned value from the event</button>
+{{greeting}} {{info}}
