@@ -11,6 +11,14 @@ export class TestComponent {
   myId = "id123" 
 
   isDisabled = true;
+  successClass = "text-success";
+  hasError = true;
+  isSpecial = true;
+  messageClasses = {
+    "text-success": !this.hasError,
+    "text-danger": this.hasError,
+    "text-special": this.isSpecial
+  }
 
   greetname() {
     return "Hello " + this.name;
