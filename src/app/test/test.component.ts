@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class TestComponent {
   name = 'Dhoni';
 
+  myId = "id123" 
+
+  isDisabled = true;
+
   greetname() {
     return "Hello " + this.name;
   }
