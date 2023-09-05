@@ -52,6 +52,19 @@ export class TestComponent {
 
   color = 'blue';
 
+<<<<<<< HEAD
+  colors = ["red", "blue", "green", "yellow"]
+
+  lowercase = "lowercase";
+  uppercase = "uppercase";
+  titlecase = "It will change to titlecase";
+  person = {
+    "firstname": "MS",
+    "lastname": "Dhoni"
+  }
+
+  date = new Date();
+=======
   colors = ['red', 'blue', 'green', 'yellow'];
 
   @Input('parentData') dataFromParent: any;
@@ -61,4 +74,5 @@ export class TestComponent {
   fireEvent(): void {
     this.childEvent.emit('This is from Child Component');
   }
+>>>>>>> ea9f6061847da8eb42e227e979d72cc8219b0783
 }
