@@ -51,4 +51,6 @@ export class TestComponent {
   displayName2 = false;
 
   color = "blue";
+
+  colors = ["red", "blue", "green", "yellow"]
 }
