@@ -9,6 +9,7 @@ import { TestComponent } from './test/test.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { EmployeeService } from "./employee.service";
+import { DepartmentListComponent } from './department-list/department-list.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { EmployeeService } from "./employee.service";
     TestComponent,
     EmployeeListComponent,
     EmployeeDetailComponent,
+    DepartmentListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [EmployeeService],
